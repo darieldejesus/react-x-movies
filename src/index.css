@@ -1,0 +1,9 @@
+body {
+  background: url("/assets/images/background.jpg") center/cover no-repeat fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+  width: 95vw;
+}
