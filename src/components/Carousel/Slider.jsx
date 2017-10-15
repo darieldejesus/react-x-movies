@@ -22,7 +22,7 @@ class Slider extends Component {
      this.setState({
        currentEntry: currentEntry === latestIndex ? 0 : (currentEntry + 1),
      });
-   }, 5000);
+   }, 50000);
  }
 
  componentWillUnmount() {
@@ -34,15 +34,18 @@ class Slider extends Component {
    const { currentEntry } = this.state;
    return (
      <Container>
-       {entries.map((entry, index) => [
+       {entries.map((entry, index) => (
          <Slide
            key={entry.title}
            active={index === currentEntry}
            title={entry.title}
            image={entry.backdrop_path}
            preLoad={index === currentEntry + 1}
-         />,
-    ])}
+           overview={entry.overview}
+           release={entry.release_date}
+           rate={entry.vote_average}
+         />
+       ))}
      </Container>
    );
  }

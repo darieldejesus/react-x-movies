@@ -4,11 +4,15 @@ import Styled from 'styled-components';
 import NavMenuLink from './NavMenuLink';
 
 const NavContainer = Styled.ul`
-	background: #FFF;
-	border-radius: 5px;
 	padding: 0;
 	display: flex;
-	width: max-content;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	position: relative;
+	top: -10px;
+	padding-top: 10px;
+	background: #ed0105;
 `;
 
 
@@ -18,19 +22,29 @@ const sections = [
 		href: '/',
 	},
 	{
-		label: 'Reviews',
-		href: '/reviews',
+		label: 'Most Popular',
+		href: '/popular',
 	},
+  {
+    label: 'Genres',
+    href: '/genres',
+  },
+  {
+    label: 'Reviews',
+    href: '/reviews',
+  },
+  {
+    label: 'Contact',
+    href: '/contact',
+  },
 ];
 
 const NavMenu = () => (
-	<div>
-		<NavContainer>
-			{sections.map(section => (
-				<NavMenuLink key={section.href} href={section.href} label={section.label} />
-			))}
-		</NavContainer>
-	</div>
+	<NavContainer>
+		{sections.map(section => (
+			<NavMenuLink key={section.href} href={section.href} label={section.label} />
+		))}
+	</NavContainer>
 );
 
 export default NavMenu;
