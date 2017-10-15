@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Styled from 'styled-components';
 
 import Slide from './Slide';
 
 const Container = Styled.section`
   background: #FFF;
-  position: relative;
   overflow: auto;
+  position: relative;
 `;
 
 class Slider extends Component {
@@ -36,14 +36,14 @@ class Slider extends Component {
      <Container>
        {entries.map((entry, index) => (
          <Slide
-           key={entry.title}
+           key={entry.id}
            active={index === currentEntry}
-           title={entry.title}
            image={entry.backdrop_path}
-           preLoad={index === currentEntry + 1}
            overview={entry.overview}
-           release={entry.release_date}
+           preLoad={index === currentEntry + 1}
            rate={entry.vote_average}
+           release={entry.release_date}
+           title={entry.title}
          />
        ))}
      </Container>
@@ -53,8 +53,8 @@ class Slider extends Component {
 
 Slider.propTypes = {
   entries: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
     backdrop_path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
   })).isRequired,
 };
 

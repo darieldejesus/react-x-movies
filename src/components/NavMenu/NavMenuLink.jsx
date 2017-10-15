@@ -5,23 +5,23 @@ import { NavLink } from 'react-router-dom';
 
 const Link = Styled(NavLink)`
 	color: #63676f;
-	text-decoration: none;
-	font-weight: 500;
 	font-size: 15px;
+	font-weight: 500;
+	text-decoration: none;
 	text-transform: uppercase;
 `;
 
 const NavItem = Styled.li`
 	background: #eaeaeb;
-	list-style-type: none;
 	box-shadow: inset -1px 0px 0px #cecece;
-	padding: 10px 20px;
 	cursor: pointer;
-	flex: 1;
-	text-align: center;
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	list-style-type: none;
+	padding: 10px 20px;
+	text-align: center;
 	
 	&:last-child {
 		box-shadow: none;

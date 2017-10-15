@@ -1,6 +1,6 @@
 import React from 'react';
-import Styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Styled from 'styled-components';
 
 import MovieThumbnail from './MovieThumbnail';
 
@@ -19,9 +19,9 @@ const ListOfMovies = ({ entries }) => (
 
 ListOfMovies.propTypes = {
   entries: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
     poster_path: PropTypes.string.isRequired,
     release_date: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
   })).isRequired,
 };
 

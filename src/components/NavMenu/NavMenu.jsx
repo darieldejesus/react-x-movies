@@ -4,15 +4,14 @@ import Styled from 'styled-components';
 import NavMenuLink from './NavMenuLink';
 
 const NavContainer = Styled.ul`
-	padding: 0;
+	background: #ed0105;
 	display: flex;
-	width: 100%;
 	height: 80px;
 	margin: 0;
+	padding: 10px 0 0 0;
 	position: relative;
 	top: -10px;
-	padding-top: 10px;
-	background: #ed0105;
+	width: 100%;
 `;
 
 

@@ -28,18 +28,23 @@ const MovieReleaseDate = Styled.h4`
   margin: 0;
 `;
 
-const MovieThumbnail = ({ title, poster_path, release_date }) => (
+const MovieGridThumbnail = ({ title, poster_path, release_date, vote_average, vote_count, popularity }) => (
   <Container>
     <Image src={`https://image.tmdb.org/t/p/w154${poster_path}`} />
     <MovieName>{ title }</MovieName>
+    <MovieReleaseDate>{ popularity } </MovieReleaseDate>
+    <MovieReleaseDate>{ vote_average } ({ vote_count })</MovieReleaseDate>
     <MovieReleaseDate>({ release_date })</MovieReleaseDate>
   </Container>
 );
 
-MovieThumbnail.propTypes = {
+MovieGridThumbnail.propTypes = {
+  popularity: PropTypes.number.isRequired,
   poster_path: PropTypes.string.isRequired,
   release_date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  vote_average: PropTypes.number.isRequired,
+  vote_count: PropTypes.number.isRequired,
 };
 
-export default MovieThumbnail;
+export default MovieGridThumbnail;

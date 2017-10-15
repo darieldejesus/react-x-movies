@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Styled from 'styled-components';
 
-import NavMenu from './NavMenu';
+import NavMenu from './NavMenu/';
 
 const TopSection = Styled.section`
 	background: #31353d;
@@ -10,9 +11,9 @@ const TopSection = Styled.section`
 
 const ContentContainer = Styled.section`
 	background: #fff;
-	padding: 0 30px;
-	max-width: 1024px;
 	margin: 0 auto;
+	max-width: 1024px;
+	padding: 0 30px;
 `;
 
 class BasePage extends React.Component {
@@ -28,6 +29,10 @@ class BasePage extends React.Component {
 			</ContentContainer>
 		]
 	}
-
 }
+
+BasePage.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export default BasePage;

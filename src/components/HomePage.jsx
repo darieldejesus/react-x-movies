@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 
-import Slider from './Carousel/Slider';
 import BasePage from './BasePage';
-import TopMovies from "./TopMovies/TopMovies";
+import Slider from './Slider';
+import TopMovies from './TopMovies';
 
 class HomePage extends Component {
+  componentDidMount () {
+    const { popularMovies } = this.props.popularMovies;
+    const { topRatedMovies } = this.props.topRatedMovies;
+
+    popularMovies.length === 0 && this.props.fetchPopularMovies();
+    topRatedMovies.length === 0 && this.props.fetchTopRatedMovies();
+  }
+
   render () {
     const { popularMovies, topRatedMovies } = this.props;
     return (

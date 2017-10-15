@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import ListOfMovies from './ListOfMovies';
 
 const Title = Styled.h1`
-  font-size: 2rem;
   color: #ed0005;
+  font-size: 2rem;
   margin: 0;
 `;
 
@@ -23,9 +23,9 @@ const TopMovies = ({ entries }) => (
 
 TopMovies.propTypes = {
   entries: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
     poster_path: PropTypes.string.isRequired,
     release_date: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
   })).isRequired,
 };
 

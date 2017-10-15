@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 
 const Container = Styled.div`
   background: #FFF;
-  z-index: 1;
+  display: flex;
+  float: left;
+  margin-right: -100%;
   opacity: 0;
   transition: opacity 1s;
   width: 100%;
-  float: left;
-  margin-right: -100%;
-  display: flex;
+  z-index: 1;
 
   ${props => props.active && css`
     opacity: 1;
@@ -28,8 +28,8 @@ const DetailsContainer = Styled.div`
 `;
 
 const Header = Styled.h1`
-  font-size: 2em;
   color: #ed0105;
+  font-size: 2em;
 `;
 
 const Details = ({ title, date, rate, overview }) => {
@@ -74,10 +74,10 @@ class Slide extends Component {
 }
 
 Slide.propTypes = {
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
   active: PropTypes.bool.isRequired,
+  image: PropTypes.string.isRequired,
   preLoad: PropTypes.bool.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Slide;
