@@ -1,0 +1,9 @@
+{
+  "globals": {
+    "mount": true,
+    "render": true,
+    "shallow": true,
+    "sinon": true,
+    "toJson": true
+  }
+}

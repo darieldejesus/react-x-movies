@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider should renders slider with slides components 1`] = `
+<styled.section>
+  <Slide
+    active={true}
+    image="/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg"
+    key="346364"
+    overview="In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise."
+    preLoad={false}
+    rate={7.3}
+    release="2017-09-05"
+    title="It"
+  />
+  <Slide
+    active={false}
+    image="/wBzMnQ01R9w58W6ucltdYfOyP4j.jpg"
+    key="284053"
+    overview="Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela."
+    preLoad={true}
+    rate={7.7}
+    release="2017-10-25"
+    title="Thor: Ragnarok"
+  />
+  <Slide
+    active={false}
+    image="/eGx5OfOdvM0gkHdmkLe3hcJuEIT.jpg"
+    key="440021"
+    overview="A college student relives the day of her murder over and over again as she tries to discover her killer's identity."
+    preLoad={false}
+    rate={6.5}
+    release="2017-10-12"
+    title="Happy Death Day"
+  />
+  <Slide
+    active={false}
+    image="/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg"
+    key="211672"
+    overview="Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world."
+    preLoad={false}
+    rate={6.4}
+    release="2015-06-17"
+    title="Minions"
+  />
+  <Slide
+    active={false}
+    image="/2SEgJ0mHJ7TSdVDbkGU061tR33K.jpg"
+    key="347882"
+    overview="A young street magician is left to take care of his little sister after his mother's passing and turns to drug dealing in the Los Angeles party scene to keep a roof over their heads. When he gets into trouble with his supplier, his sister is kidnapped and he is forced to rely on both his sleight of hand and brilliant mind to save her."
+    preLoad={false}
+    rate={5.5}
+    release="2017-04-28"
+    title="Sleight"
+  />
+  <Slide
+    active={false}
+    image="/ulMscezy9YX0bhknvJbZoUgQxO5.jpg"
+    key="281338"
+    overview="Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet."
+    preLoad={false}
+    rate={6.8}
+    release="2017-07-11"
+    title="War for the Planet of the Apes"
+  />
+  <Slide
+    active={false}
+    image="/vc8bCGjdVp0UbMNLzHnHSLRbBWQ.jpg"
+    key="315635"
+    overview="Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges."
+    preLoad={false}
+    rate={7.3}
+    release="2017-07-05"
+    title="Spider-Man: Homecoming"
+  />
+  <Slide
+    active={false}
+    image="/mVr0UiqyltcfqxbAUcLl9zWL8ah.jpg"
+    key="335984"
+    overview="Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years."
+    preLoad={false}
+    rate={7.4}
+    release="2017-10-04"
+    title="Blade Runner 2049"
+  />
+  <Slide
+    active={false}
+    image="/ytKpFaLMpFWnuSXStz1GHrtTt6R.jpg"
+    key="298250"
+    overview="Dead bodies begin to turn up all over the city, each meeting their demise in a variety of grisly ways. All investigations begin to point the finger at deceased killer John Kramer."
+    preLoad={false}
+    rate={5.9}
+    release="2017-10-20"
+    title="Jigsaw"
+  />
+  <Slide
+    active={false}
+    image="/lhTtnsPmEYUJB7nOaTKJzYoxJ7X.jpg"
+    key="274855"
+    overview="Gerard Butler playing a stubborn but charming satellite designer who, when the world’s climate-controlling satellites malfunction, has to work together with his estranged brother to save the world from a man-made storm of epic proportions. A trip into space follows, while on Earth a plot to assassinate the president begins to unfold."
+    preLoad={false}
+    rate={5.8}
+    release="2017-10-13"
+    title="Geostorm"
+  />
+  <Slide
+    active={false}
+    image="/6aUWe0GSl69wMTSWWexsorMIvwU.jpg"
+    key="321612"
+    overview="A live-action adaptation of Disney's version of the classic 'Beauty and the Beast' tale of a cursed prince and a beautiful young woman who helps him break the spell."
+    preLoad={false}
+    rate={6.8}
+    release="2017-03-16"
+    title="Beauty and the Beast"
+  />
+  <Slide
+    active={false}
+    image="/2BXd0t9JdVqCp9sKf6kzMkr7QjB.jpg"
+    key="177572"
+    overview="The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes."
+    preLoad={false}
+    rate={7.8}
+    release="2014-10-24"
+    title="Big Hero 6"
+  />
+  <Slide
+    active={false}
+    image="/tAg6KUBANIVbYUpTHy5oKibhhw3.jpg"
+    key="372343"
+    overview="Detective Harry Hole investigates the disappearance of a woman whose pink scarf is found wrapped around an ominous looking snowman."
+    preLoad={false}
+    rate={5}
+    release="2017-10-12"
+    title="The Snowman"
+  />
+  <Slide
+    active={false}
+    image="/6iUNJZymJBMXXriQyFZfLAKnjO6.jpg"
+    key="297762"
+    overview="An Amazon princess comes to the world of Man to become the greatest of the female superheroes."
+    preLoad={false}
+    rate={7.2}
+    release="2017-05-30"
+    title="Wonder Woman"
+  />
+  <Slide
+    active={false}
+    image="/go1a6YwrVTMrNNIfaRpBRp5pIzV.jpg"
+    key="390062"
+    overview="A mysterious guide escorts an enthusiastic adventurer and his friend into the Amazon jungle, but their journey turns into a terrifying ordeal as the darkest elements of human nature and the deadliest threats of the wild force them to fight for survival."
+    preLoad={false}
+    rate={5.3}
+    release="2017-10-20"
+    title="Jungle"
+  />
+  <Slide
+    active={false}
+    image="/lj3wkYkJGkfmDfXkKrVarSJpFD4.jpg"
+    key="341013"
+    overview="An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents."
+    preLoad={false}
+    rate={6.2}
+    release="2017-07-26"
+    title="Atomic Blonde"
+  />
+  <Slide
+    active={false}
+    image="/umC04Cozevu8nn3JTDJ1pc7PVTn.jpg"
+    key="245891"
+    overview="Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him."
+    preLoad={false}
+    rate={7}
+    release="2014-10-22"
+    title="John Wick"
+  />
+  <Slide
+    active={false}
+    image="/bt6DhdALyhf90gReozoQ0y3R3vZ.jpg"
+    key="210577"
+    overview="With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent."
+    preLoad={false}
+    rate={7.9}
+    release="2014-10-01"
+    title="Gone Girl"
+  />
+  <Slide
+    active={false}
+    image="/4PwyB0ErucIANzW24Kori71J6gU.jpg"
+    key="131631"
+    overview="Katniss Everdeen reluctantly becomes the symbol of a mass rebellion against the autocratic Capitol."
+    preLoad={false}
+    rate={6.6}
+    release="2014-11-18"
+    title="The Hunger Games: Mockingjay - Part 1"
+  />
+  <Slide
+    active={false}
+    image="/9rZg1J6vMQoDVSgRyWcpJa8IAGy.jpg"
+    key="680"
+    overview="A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time."
+    preLoad={false}
+    rate={8.3}
+    release="1994-09-10"
+    title="Pulp Fiction"
+  />
+  <Slide
+    active={false}
+    image="/78kN1a1AHxAPEh7hQhNjDQhLZ9W.jpg"
+    key="459202"
+    overview="Madea and the gang encounter monsters, goblins and boogeymen at a haunted campground."
+    preLoad={false}
+    rate={5.4}
+    release="2017-10-20"
+    title="Boo 2! A Madea Halloween"
+  />
+  <Slide
+    active={false}
+    image="/oakHIN1th8DefPrMu2Eo52qHhnS.jpg"
+    key="399057"
+    overview="A teenager's attempts to bring a brilliant surgeon into his dysfunctional family take an unexpected turn."
+    preLoad={false}
+    rate={5.8}
+    release="2017-10-20"
+    title="The Killing of a Sacred Deer"
+  />
+  <Slide
+    active={false}
+    image="/3FweBee0xZoY77uO1bhUOlQorNH.jpg"
+    key="76338"
+    overview="Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all."
+    preLoad={false}
+    rate={6.7}
+    release="2013-10-29"
+    title="Thor: The Dark World"
+  />
+  <Slide
+    active={false}
+    image="/p7mUT8Usu1kNlfd1ugk6FwKejlo.jpg"
+    key="290512"
+    overview="Stranded after a tragic plane crash, two strangers must forge a connection to survive the extreme elements of a remote snow covered mountain. When they realize help is not coming, they embark on a perilous journey across the wilderness."
+    preLoad={false}
+    rate={6.4}
+    release="2017-10-05"
+    title="The Mountain Between Us"
+  />
+  <Slide
+    active={false}
+    image="/2Qwb7EayKsD2cuB3I2u2k2VU3Lb.jpg"
+    key="166426"
+    overview="Thrust into an all-new adventure, a down-on-his-luck Capt. Jack Sparrow feels the winds of ill-fortune blowing even more strongly when deadly ghost sailors led by his old nemesis, the evil Capt. Salazar, escape from the Devil's Triangle. Jack's only hope of survival lies in seeking out the legendary Trident of Poseidon, but to find it, he must forge an uneasy alliance with a brilliant and beautiful astronomer and a headstrong young man in the British navy."
+    preLoad={false}
+    rate={6.6}
+    release="2017-05-23"
+    title="Pirates of the Caribbean: Dead Men Tell No Tales"
+  />
+  <Slide
+    active={false}
+    image="/egHeYqgrutiRAzGGWTKp3zqUw0j.jpg"
+    key="395458"
+    overview="A crime mystery set in the quiet family town of Suburbicon during the 1950s, where the best and worst of humanity is hilariously reflected through the deeds of seemingly ordinary people. When a home invasion turns deadly, a picture-perfect family turns to blackmail, revenge, and murder."
+    preLoad={false}
+    rate={4.8}
+    release="2017-10-27"
+    title="Suburbicon"
+  />
+  <Slide
+    active={false}
+    image="/rND0GSv8X2Zzs7VhyFAs9BCEmYE.jpg"
+    key="260514"
+    overview="Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen is suddenly pushed out of the sport he loves. To get back in the game, he will need the help of an eager young race technician with her own plan to win, inspiration from the late Fabulous Hudson Hornet, and a few unexpected turns. Proving that #95 isn't through yet will test the heart of a champion on Piston Cup Racing’s biggest stage!"
+    preLoad={false}
+    rate={6.7}
+    release="2017-06-15"
+    title="Cars 3"
+  />
+  <Slide
+    active={false}
+    image="/LvmmDZxkTDqp0DX7mUo621ahdX.jpg"
+    key="10195"
+    overview="Against his father Odin's will, The Mighty Thor - a powerful but arrogant warrior god - recklessly reignites an ancient war. Thor is cast down to Earth and forced to live among humans as punishment. Once here, Thor learns what it takes to be a true hero when the most dangerous villain of his world sends the darkest forces of Asgard to invade Earth."
+    preLoad={false}
+    rate={6.6}
+    release="2011-04-21"
+    title="Thor"
+  />
+  <Slide
+    active={false}
+    image="/eUSNKg5tlocYAQs5nHlDxyAefuB.jpg"
+    key="383709"
+    overview="The story of a young boy in the Midwest is told simultaneously with a tale about a young girl in New York from fifty years ago as they both seek the same mysterious connection."
+    preLoad={false}
+    rate={5.1}
+    release="2017-10-20"
+    title="Wonderstruck"
+  />
+  <Slide
+    active={false}
+    image="/8wI0M7HDHhDsoxMCkcAVUx7O6DX.jpg"
+    key="395991"
+    overview="Members of the Granite Mountain Hotshots battle deadly wildfires to save an Arizona town."
+    preLoad={false}
+    rate={4.8}
+    release="2017-10-19"
+    title="Only the Brave"
+  />
+  <Slide
+    active={false}
+    image="/Ytv7P13rbwQ3mLpCAY8lBTqI5s.jpg"
+    key="335988"
+    overview="Autobots and Decepticons are at war, with humans on the sidelines. Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth."
+    preLoad={false}
+    rate={6.2}
+    release="2017-06-16"
+    title="Transformers: The Last Knight"
+  />
+  <Slide
+    active={false}
+    image="/p57KuXI3GbdBEyQ26ImwMRNGyIc.jpg"
+    key="398175"
+    overview="After working as a drug courier and getting into a brutal shootout with police, a former boxer finds himself at the mercy of his enemies as they force him to instigate violent acts that turn the prison he resides in into a battleground."
+    preLoad={false}
+    rate={6.6}
+    release="2017-10-06"
+    title="Brawl in Cell Block 99"
+  />
+  <Slide
+    active={false}
+    image="/pVVobDO8cezhVPvwD6EBUN0g3mt.jpg"
+    key="353491"
+    overview="The last Gunslinger, Roland Deschain, has been locked in an eternal battle with Walter O’Dim, also known as the Man in Black, determined to prevent him from toppling the Dark Tower, which holds the universe together. With the fate of the worlds at stake, good and evil will collide in the ultimate battle as only Roland can defend the Tower from the Man in Black."
+    preLoad={false}
+    rate={5.6}
+    release="2017-08-03"
+    title="The Dark Tower"
+  />
+  <Slide
+    active={false}
+    image="/goCvLSUFz0p7k8R10Hv4CVh3EQv.jpg"
+    key="339403"
+    overview="After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail."
+    preLoad={false}
+    rate={7.2}
+    release="2017-06-28"
+    title="Baby Driver"
+  />
+  <Slide
+    active={false}
+    image="/n6tHeze754dRHelAF1Vvibjk9t1.jpg"
+    key="138129"
+    overview="Italy, XIII century. The story of friendship between two young people who dedicated their lives to God and others: St. Francis and St. Clare of Assisi. Children of the bourgeoisie and the nobility, respectively, gave up their lives accommodated by a life of sacrifice, humility and proselytizing ..."
+    preLoad={false}
+    rate={2.5}
+    release="2007-01-01"
+    title="Chiara e Francesco"
+  />
+  <Slide
+    active={false}
+    image="/lMDyuHzBhx3zNAv48vYzmgcJCCD.jpg"
+    key="419680"
+    overview="Brad and Dusty must deal with their intrusive fathers during the holidays."
+    preLoad={false}
+    rate={5.4}
+    release="2017-11-09"
+    title="Daddy's Home 2"
+  />
+  <Slide
+    active={false}
+    image="/o5T8rZxoWSBMYwjsUFUqTt6uMQB.jpg"
+    key="141052"
+    overview="Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry, and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth."
+    preLoad={false}
+    rate={7.2}
+    release="2017-11-15"
+    title="Justice League"
+  />
+  <Slide
+    active={false}
+    image="/5D8DfGzbNzjbvs3mvw4MTCSPwKw.jpg"
+    key="300687"
+    overview="International art dealer Ron Hall must befriend a dangerous homeless man in order to save his struggling marriage to his wife, a woman whose dreams will lead all three of them on the journey of their lives."
+    preLoad={false}
+    rate={5.5}
+    release="2017-10-20"
+    title="Same Kind of Different as Me"
+  />
+  <Slide
+    active={false}
+    image="/zms098KnZ30YfV9K0FaeiCUGuQ6.jpg"
+    key="413362"
+    overview="Hard-nosed liberal lawyer Roman J. Israel has been fighting the good fight forever while others take the credit. When his partner, the firm’s frontman, has a heart attack, Israel suddenly takes on that role. He soon discovers some unsettling truths about the firm--truths that conflict with his values of helping the poor and dispossessed--and finds himself in an existential crisis that leads to extreme actions."
+    preLoad={false}
+    rate={0}
+    release="2017-11-10"
+    title="Roman J. Israel, Esq."
+  />
+  <Slide
+    active={false}
+    image="/mJHSPIvKoa1gwrdAMXWWq5utx3b.jpg"
+    key="345923"
+    overview="A blind woman's relationship with her husband changes when she regains her sight and discovers disturbing details about themselves."
+    preLoad={false}
+    rate={3.4}
+    release="2017-08-10"
+    title="All I See Is You"
+  />
+</styled.section>
+`;

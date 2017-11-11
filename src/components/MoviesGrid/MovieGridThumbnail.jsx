@@ -32,10 +32,10 @@ const MovieReleaseDate = Styled.h4`
 const MovieGridThumbnail = ({ id, title, poster_path, release_date, vote_average, vote_count, popularity }) => (
   <Container>
     <Image src={`https://image.tmdb.org/t/p/w154${poster_path}`} />
-    <MovieName href={ `/movie/${id}` }>{ title }</MovieName>
-    <MovieReleaseDate>{ popularity } </MovieReleaseDate>
-    <MovieReleaseDate>{ vote_average } ({ vote_count })</MovieReleaseDate>
-    <MovieReleaseDate>({ release_date })</MovieReleaseDate>
+    <MovieName href={ `/movie/${id}` }>{title}</MovieName>
+    <MovieReleaseDate>{popularity} </MovieReleaseDate>
+    <MovieReleaseDate>{vote_average} ({vote_count})</MovieReleaseDate>
+    <MovieReleaseDate>({release_date})</MovieReleaseDate>
   </Container>
 );
 

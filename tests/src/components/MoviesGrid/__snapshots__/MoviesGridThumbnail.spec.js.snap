@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesGridThumbnail should renders the MoviesGridThumbnail 1`] = `
+<styled.div>
+  <styled.img
+    src="https://image.tmdb.org/t/p/w154/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
+  />
+  <styled.a
+    href="/movie/346364"
+  >
+    It
+  </styled.a>
+  <styled.h4>
+    729.612854
+     
+  </styled.h4>
+  <styled.h4>
+    7.3
+     (
+    3559
+    )
+  </styled.h4>
+  <styled.h4>
+    (
+    2017-09-05
+    )
+  </styled.h4>
+</styled.div>
+`;

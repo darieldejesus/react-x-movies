@@ -32,32 +32,52 @@ const Header = Styled.h1`
   font-size: 2em;
 `;
 
-const Details = ({ title, date, rate, overview }) => {
-  return (
-    <DetailsContainer>
-      <Header>{ title }</Header>
-      <p><b>Release: </b>{date}</p>
-      <p><b>Rating: </b>{rate}</p>
-      <p>{overview}</p>
-    </DetailsContainer>
-  )
+const Details = ({
+  title,
+  date,
+  rate,
+  overview,
+}) => (
+  <DetailsContainer>
+    <Header>{ title }</Header>
+    <p><b>Release: </b>{date}</p>
+    <p><b>Rating: </b>{rate}</p>
+    <p>{overview}</p>
+  </DetailsContainer>
+);
+
+Details.propTypes = {
+  date: PropTypes.string.isRequired,
+  overview: PropTypes.string.isRequired,
+  rate: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 class Slide extends Component {
-  state = {
-    loaded: false,
+  constructor() {
+    super();
+
+    this.state = {
+      loaded: false,
+    };
   }
 
-  componentDidMount () {
-    this.props.active && this.setState({ loaded: true });
+  componentDidMount() {
+    if (this.props.active) {
+      this.setState({ loaded: true });
+    }
   }
 
   componentWillReceiveProps() {
-    !this.state.loaded && this.props.active && this.setState({ loaded: true });
+    if (!this.state.loaded && this.props.active) {
+      this.setState({ loaded: true });
+    }
   }
 
-  render () {
-    const { active, title, image, preLoad, overview, release, rate } = this.props;
+  render() {
+    const {
+      active, title, image, preLoad, overview, release, rate,
+    } = this.props;
     const { loaded } = this.state;
 
     return (
@@ -65,18 +85,20 @@ class Slide extends Component {
         {(loaded || active || preLoad)
         && [
           <Image key="slide-image" src={`https://image.tmdb.org/t/p/w780/${image}`} alt={title} />,
-          <Details key="slide-details" title={title} date={release} rate={rate} overview={overview}/>
-        ]
+          <Details key="slide-details" title={title} date={release} rate={rate} overview={overview} />]
         }
       </Container>
-    )
+    );
   }
 }
 
 Slide.propTypes = {
   active: PropTypes.bool.isRequired,
   image: PropTypes.string.isRequired,
+  overview: PropTypes.string.isRequired,
   preLoad: PropTypes.bool.isRequired,
+  rate: PropTypes.number.isRequired,
+  release: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 

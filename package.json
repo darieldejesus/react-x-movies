@@ -42,12 +42,13 @@
     "jest-styled-components": "^4.9.0",
     "jsdom": "^11.3.0",
     "pre-commit": "^1.2.2",
-    "raf": "^3.4.0"
+    "raf": "^3.4.0",
+    "sinon": "^4.1.2"
   },
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "verbose": true
+    "verbose": false
   }
 }

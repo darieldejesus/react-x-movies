@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slide should renders Slide 1`] = `
+<styled.div
+  active={true}
+>
+  <styled.img
+    alt="It"
+    key="slide-image"
+    src="https://image.tmdb.org/t/p/w780//tcheoA2nPATCm2vvXw2hVQoaEFD.jpg"
+  />
+  <Details
+    date="2017-09-05"
+    key="slide-details"
+    overview="In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise."
+    rate={7.3}
+    title="It"
+  />
+</styled.div>
+`;

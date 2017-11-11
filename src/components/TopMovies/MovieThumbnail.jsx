@@ -32,7 +32,7 @@ const MovieReleaseDate = Styled.h4`
 const MovieThumbnail = ({ id, title, poster_path, release_date }) => (
   <Container>
     <Image src={`https://image.tmdb.org/t/p/w154${poster_path}`} />
-    <MovieName href={ `/movie/${id}` }>{ title }</MovieName>
+    <MovieName href={`/movie/${id}`}>{ title }</MovieName>
     <MovieReleaseDate>({ release_date })</MovieReleaseDate>
   </Container>
 );
