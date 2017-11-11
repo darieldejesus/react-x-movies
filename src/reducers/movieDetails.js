@@ -2,10 +2,10 @@ import {
   FETCH_MOVIE_DETAILS_STARTED,
   FETCH_MOVIE_DETAILS_COMPLETED,
   FETCH_MOVIE_DETAILS_FAILED,
-} from '../actions/index';
+} from '../actions/movieDetails';
 
 const movieDetailsInitialState = {
-  details: [],
+  details: {},
   isLoading: false,
 };
 

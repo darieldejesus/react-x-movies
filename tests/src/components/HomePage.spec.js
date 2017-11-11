@@ -1,10 +1,10 @@
 import React from 'react';
-import HomePage from "../../../src/components/HomePage";
+import HomePage from '../../../src/components/HomePage';
 import fixture from '../../fixture/movies.json';
 
 describe('HomePage', function () {
   beforeEach(() => {
-    this.fetchPopularMovies = sinon.spy();
+    this.fetchTopPopularMovies = sinon.spy();
     this.fetchTopRatedMovies = sinon.spy();
 
     const popular = Object.assign({}, fixture[0], {
@@ -19,7 +19,7 @@ describe('HomePage', function () {
     this.wrapper = shallow(<HomePage
       popularMovies={popular}
       topRatedMovies={topRated}
-      fetchPopularMovies={this.fetchPopularMovies}
+      fetchTopPopularMovies={this.fetchTopPopularMovies}
       fetchTopRatedMovies={this.fetchTopRatedMovies}
     />);
   });
@@ -39,8 +39,8 @@ describe('HomePage', function () {
     expect(toJson(this.wrapper)).toMatchSnapshot();
   });
 
-  test('should execute "fetchPopularMovies" and "fetchTopRatedMovies"', () => {
-    expect(this.fetchPopularMovies.callCount).toEqual(0);
+  test('should execute "fetchTopPopularMovies" and "fetchTopRatedMovies"', () => {
+    expect(this.fetchTopPopularMovies.callCount).toEqual(0);
     expect(this.fetchTopRatedMovies.callCount).toEqual(0);
 
     this.wrapper.setProps({
@@ -50,7 +50,7 @@ describe('HomePage', function () {
 
     this.wrapper.instance().componentDidMount();
 
-    expect(this.fetchPopularMovies.callCount).toEqual(1);
+    expect(this.fetchTopPopularMovies.callCount).toEqual(1);
     expect(this.fetchTopRatedMovies.callCount).toEqual(1);
   });
 });

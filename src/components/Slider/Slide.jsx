@@ -62,7 +62,7 @@ class Slide extends Component {
     };
   }
 
-  componentDidMount() {
+  componentWillMount() {
     if (this.props.active) {
       this.setState({ loaded: true });
     }
@@ -85,7 +85,8 @@ class Slide extends Component {
         {(loaded || active || preLoad)
         && [
           <Image key="slide-image" src={`https://image.tmdb.org/t/p/w780/${image}`} alt={title} />,
-          <Details key="slide-details" title={title} date={release} rate={rate} overview={overview} />]
+          <Details key="slide-details" title={title} date={release} rate={rate} overview={overview} />,
+        ]
         }
       </Container>
     );

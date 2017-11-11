@@ -1,17 +1,27 @@
 import { connect } from 'react-redux';
 
-import { movieActions } from '../actions';
+import fetchMovieRecommendations from '../actions/movieRecommendationList';
+import fetchMovieDetails from '../actions/movieDetails';
 import MoviePage from '../components/MoviePage';
 
+/**
+ * Maps which properties or the global redux state will be used by this component.
+ * @param {Object} movieDetails
+ * @param {Array} movieRecommendations
+ */
 const mapStateToProps = ({ movieDetails, movieRecommendations }) => ({
   movieDetails,
   movieRecommendations,
 });
 
+/**
+ * Specify which actions will be used by the component.
+ * @param dispatch
+ */
 const mapDispatchToProps = dispatch => ({
   fetchMovieDetails: (movieId) => {
-    movieActions.fetchMovieDetails(dispatch, movieId);
-    movieActions.fetchMovieRecommendations(dispatch, movieId);
+    fetchMovieDetails(dispatch, movieId);
+    fetchMovieRecommendations(dispatch, movieId);
   },
 });
 

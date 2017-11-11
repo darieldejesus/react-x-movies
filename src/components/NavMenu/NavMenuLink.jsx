@@ -26,8 +26,9 @@ const NavItem = Styled.li`
   text-align: center;
 
   &:last-child {
-    box-shadow: none;	
-  }`;
+    box-shadow: none;
+  }
+`;
 
 NavItem.displayName = 'NavItem';
 

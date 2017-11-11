@@ -11,7 +11,7 @@ class HomePage extends Component {
     const { topRatedMovies } = this.props.topRatedMovies;
 
     if (popularMovies.length === 0) {
-      this.props.fetchPopularMovies();
+      this.props.fetchTopPopularMovies();
     }
 
     if (topRatedMovies.length === 0) {
@@ -46,7 +46,7 @@ HomePage.propTypes = {
     isLoading: PropType.bool.isRequired,
     topRatedMovies: PropType.array.isRequired,
   }).isRequired,
-  fetchPopularMovies: PropType.func.isRequired,
+  fetchTopPopularMovies: PropType.func.isRequired,
   fetchTopRatedMovies: PropType.func.isRequired,
 };
 

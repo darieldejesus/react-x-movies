@@ -1,8 +1,8 @@
 import {
-  FETCH_POPULAR_MOVIES_STARTED,
-  FETCH_POPULAR_MOVIES_COMPLETED,
-  FETCH_POPULAR_MOVIES_FAILED,
-} from '../actions/index';
+  FETCH_TOP_POPULAR_MOVIES_STARTED,
+  FETCH_TOP_POPULAR_MOVIES_COMPLETED,
+  FETCH_TOP_POPULAR_MOVIES_FAILED,
+} from '../actions/topPopularMovieList';
 
 const popularMoviesInitialState = {
   popularMovies: [],
@@ -19,11 +19,11 @@ const popularMoviesInitialState = {
  */
 export default (currentState = popularMoviesInitialState, action) => {
   switch (action.type) {
-    case FETCH_POPULAR_MOVIES_STARTED:
+    case FETCH_TOP_POPULAR_MOVIES_STARTED:
       return { ...currentState, isLoading: true };
-    case FETCH_POPULAR_MOVIES_COMPLETED:
+    case FETCH_TOP_POPULAR_MOVIES_COMPLETED:
       return { isLoading: false, popularMovies: action.payload };
-    case FETCH_POPULAR_MOVIES_FAILED:
+    case FETCH_TOP_POPULAR_MOVIES_FAILED:
       return { isLoading: false, popularMovies: [] };
     default:
       return currentState;

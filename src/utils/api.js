@@ -1,33 +1,47 @@
-const API_KEY = '3ed4c209658eec95e5b3cab4c60e673a';
-const API_URL = 'https://api.themoviedb.org/3';
+import {
+  getPopularMoviesPath,
+  getTopMoviesPath,
+  getMovieDetailsPath,
+  getMovieRecommendationsPath,
+} from '../config/api';
 
-export const getPopularMovies = (page = 1) => {
-  const endPoint = '/movie/popular';
-  const requestUrl = `${API_URL}${endPoint}?api_key=${API_KEY}&language=en-US&page=${page}`;
-  return fetch(requestUrl)
+/**
+ * Given a page numnber, reaches the API in order to fetch the most popular movies.
+ * @param {number} page - Pagination number
+ * @returns {Promise}
+ */
+export const getPopularMovies = (page = 1) => (
+  fetch(getPopularMoviesPath(page))
     .then(response => response.json())
-    .then(responseJon => responseJon.results);
-};
+    .then(responseJon => responseJon.results)
+);
 
-export const getTopMovies = () => {
-  const endPoint = '/movie/top_rated';
-  const requestUrl = `${API_URL}${endPoint}?api_key=${API_KEY}&language=en-US`;
-  return fetch(requestUrl)
+/**
+ * Reaches the API in order to fetch the top rated movies.
+ * @returns {Promise}
+ */
+export const getTopMovies = () => (
+  fetch(getTopMoviesPath())
     .then(response => response.json())
-    .then(responseJon => responseJon.results);
-};
+    .then(responseJon => responseJon.results)
+);
 
-export const getMovieDetails = (movieId) => {
-  const endPoint = `/movie/${movieId}`;
-  const requestUrl = `${API_URL}${endPoint}?api_key=${API_KEY}&language=en-US`;
-  return fetch(requestUrl)
-    .then(response => response.json());
-};
-
-export const getMovieRecommendations = (movieId) => {
-  const endPoint = `/movie/${movieId}/recommendations`;
-  const requestUrl = `${API_URL}${endPoint}?api_key=${API_KEY}&language=en-US`;
-  return fetch(requestUrl)
+/**
+ * Reaches the API in order to fetch the details of the specific movie.
+ * @param {number} movieId - ID of the movie.
+ * @returns {Promise}
+ */
+export const getMovieDetails = movieId => (
+  fetch(getMovieDetailsPath(movieId))
     .then(response => response.json())
-    .then(responseJon => responseJon.results);
-};
+);
+/**
+ * Reaches the API in order to fetch the recommendations of the specific movie.
+ * @param {number} movieId - ID of the movie where the recommendations are taken.
+ * @returns {Promise}
+ */
+export const getMovieRecommendations = movieId => (
+  fetch(getMovieRecommendationsPath(movieId))
+    .then(response => response.json())
+    .then(responseJon => responseJon.results)
+);

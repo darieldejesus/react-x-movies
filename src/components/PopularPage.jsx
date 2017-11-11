@@ -6,25 +6,34 @@ import MoviesGrid from './MoviesGrid';
 
 
 class PopularPage extends Component {
+  constructor(props) {
+    super(props);
+
+    // We should keep the same reference in order to remove the scroll event.
+    this.onScrollListener = this.onScrollListener.bind(this);
+  }
+
   componentDidMount() {
     const { currentPage } = this.props.popularSectionMovies;
     if (currentPage === 1) {
       this.getMoreMovies();
     }
-    this.onScrollListener();
+    window.addEventListener('scroll', this.onScrollListener);
   }
 
-  // remove window on componentWillUnmount
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScrollListener);
+  }
+
   onScrollListener() {
-    // use a debounce.
-    // add event to check the onResize
-    window.addEventListener('scroll', () => {
-      const currentHeight = window.innerHeight + window.scrollY;
-      const documentHeight = document.body.offsetHeight - 500;
-      if (currentHeight >= documentHeight) {
-        this.getMoreMovies();
-      }
-    });
+    // @todo Use a debounce.
+    // @todo Add event to check the onResize
+    const { scrollHeight } = this.props;
+    const currentHeight = window.innerHeight + window.scrollY;
+    const documentHeight = document.body.offsetHeight - scrollHeight;
+    if (currentHeight >= documentHeight) {
+      this.getMoreMovies();
+    }
   }
 
   getMoreMovies() {
@@ -46,12 +55,17 @@ class PopularPage extends Component {
   }
 }
 
+PopularPage.defaultProps = {
+  scrollHeight: 500,
+};
+
 PopularPage.propTypes = {
   popularSectionMovies: PropTypes.shape({
     currentPage: PropTypes.number.isRequired,
     isLoading: PropTypes.bool.isRequired,
   }).isRequired,
   fetchPopularMovies: PropTypes.func.isRequired,
+  scrollHeight: PropTypes.number,
 };
 
 export default PopularPage;

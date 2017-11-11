@@ -1,8 +1,8 @@
 import {
-  FETCH_POPULAR_SECTION_MOVIES_STARTED,
-  FETCH_POPULAR_SECTION_MOVIES_COMPLETED,
-  FETCH_POPULAR_SECTION_MOVIES_FAILED,
-} from '../actions/index';
+  FETCH_POPULAR_MOVIES_STARTED,
+  FETCH_POPULAR_MOVIES_COMPLETED,
+  FETCH_POPULAR_MOVIES_FAILED,
+} from '../actions/popularMovieList';
 
 const popularSectionMoviesInitialState = {
   currentPage: 1,
@@ -22,15 +22,15 @@ const popularSectionMoviesInitialState = {
  */
 export default (currentState = popularSectionMoviesInitialState, action) => {
   switch (action.type) {
-    case FETCH_POPULAR_SECTION_MOVIES_STARTED:
+    case FETCH_POPULAR_MOVIES_STARTED:
       return { ...currentState, isLoading: true };
-    case FETCH_POPULAR_SECTION_MOVIES_COMPLETED:
+    case FETCH_POPULAR_MOVIES_COMPLETED:
       return {
         isLoading: false,
         currentPage: currentState.currentPage + 2,
         popularSectionMovies: currentState.popularSectionMovies.concat(action.payload),
       };
-    case FETCH_POPULAR_SECTION_MOVIES_FAILED:
+    case FETCH_POPULAR_MOVIES_FAILED:
       return { isLoading: false, popularSectionMovies: [] };
     default:
       return currentState;

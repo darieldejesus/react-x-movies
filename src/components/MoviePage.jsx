@@ -51,31 +51,27 @@ const MovieRecommendations = ({ movies }) => (
 );
 
 MovieRecommendations.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 
 class MoviePage extends Component {
-  componentDidMount() {
+  componentWillMount() {
     this.props.fetchMovieDetails(this.props.match.params.id);
   }
 
   render() {
     const { movieDetails, movieRecommendations } = this.props;
     const {
-      backdrop_path: backdropPath,
+      backdrop_path,
       overview,
       popularity,
-      // poster_path,
       production_companies: productionCompanies,
       release_date: releaseDate,
-      // revenue,
-      // budget,
-      // runtime,
-      // vote_average,
-      // vote_count,
       title,
-      // imdb_id,
       homepage,
       genres,
     } = movieDetails.details;
@@ -84,7 +80,7 @@ class MoviePage extends Component {
       <BasePage>
         <MovieContainer>
           <MovieTitle>{ title }</MovieTitle>
-          <MovieImage src={`https://image.tmdb.org/t/p/w780${backdropPath}`} />
+          <MovieImage src={`https://image.tmdb.org/t/p/w780${backdrop_path}`} />
           <p>{ overview }</p>
 
           <h1>Details</h1>
@@ -112,15 +108,36 @@ class MoviePage extends Component {
   }
 }
 
-
 MoviePage.propTypes = {
   match: PropTypes.shape({
     params: {
       id: PropTypes.string.isRequired,
     },
   }).isRequired,
-  movieDetails: PropTypes.arrayOf(PropTypes.object).isRequired,
-  movieRecommendations: PropTypes.arrayOf(PropTypes.object).isRequired,
+  movieDetails: PropTypes.shape({
+    details: PropTypes.shape({
+      backdrop_path: PropTypes.string.isRequired,
+      overview: PropTypes.string.isRequired,
+      popularity: PropTypes.number.isRequired,
+      production_companies: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+      })).isRequired,
+      release_date: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      homepage: PropTypes.string.isRequired,
+      genres: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+      })).isRequired,
+    }).isRequired,
+  }).isRequired,
+  movieRecommendations: PropTypes.shape({
+    movies: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+    })).isRequired,
+  }).isRequired,
   fetchMovieDetails: PropTypes.func.isRequired,
 };
 export default MoviePage;

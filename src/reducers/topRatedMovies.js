@@ -2,7 +2,7 @@ import {
   FETCH_TOP_RATED_MOVIES_STARTED,
   FETCH_TOP_RATED_MOVIES_COMPLETED,
   FETCH_TOP_RATED_MOVIES_FAILED,
-} from '../actions/index';
+} from '../actions/topRatedMovieList';
 
 const topRatedMoviesInitialState = {
   topRatedMovies: [],

@@ -12,7 +12,7 @@ const Movies = Styled.div`
 const ListOfMovies = ({ entries }) => (
   <Movies>
     {entries.slice(0, 6).map(entry => (
-      <MovieThumbnail key={ entry.title } {...entry} />
+      <MovieThumbnail key={entry.title} {...entry} />
     ))}
   </Movies>
 );

@@ -2,7 +2,7 @@ import {
   FETCH_MOVIE_RECOMMENDATIONS_STARTED,
   FETCH_MOVIE_RECOMMENDATIONS_COMPLETED,
   FETCH_MOVIE_RECOMMENDATIONS_FAILED,
-} from '../actions/index';
+} from '../actions/movieRecommendationList';
 
 const movieRecommendationsInitialState = {
   movies: [],
