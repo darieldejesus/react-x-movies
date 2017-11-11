@@ -17,7 +17,17 @@ export const getTopMovies = () => {
     .then(responseJon => responseJon.results);
 };
 
-export default {
-  getPopularMovies,
-  getTopMovies,
+export const getMovieDetails = (movieId) => {
+  const endPoint = `/movie/${movieId}`;
+  const requestUrl = `${API_URL}${endPoint}?api_key=${API_KEY}&language=en-US`;
+  return fetch(requestUrl)
+    .then(response => response.json());
+};
+
+export const getMovieRecommendations = (movieId) => {
+  const endPoint = `/movie/${movieId}/recommendations`;
+  const requestUrl = `${API_URL}${endPoint}?api_key=${API_KEY}&language=en-US`;
+  return fetch(requestUrl)
+    .then(response => response.json())
+    .then(responseJon => responseJon.results);
 };

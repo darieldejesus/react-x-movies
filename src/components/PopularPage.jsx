@@ -15,7 +15,11 @@ class PopularPage extends Component {
     this.onScrollListener();
   }
 
+  // remove window on componentWillUnmount
+
   onScrollListener () {
+    // use a debounce.
+    // add event to check the onResize
     window.addEventListener('scroll', () => {
       const currentHeight = window.innerHeight + window.scrollY;
       const documentHeight = document.body.offsetHeight - 500;

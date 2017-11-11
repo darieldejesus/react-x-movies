@@ -10,7 +10,9 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "redux": "^3.7.2",
-    "styled-components": "^2.2.1"
+    "styled-components": "^2.2.1",
+    "yarm": "^0.4.0",
+    "yarn": "^1.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -12,6 +12,14 @@ import {
   FETCH_POPULAR_SECTION_MOVIES_STARTED,
   FETCH_POPULAR_SECTION_MOVIES_COMPLETED,
   FETCH_POPULAR_SECTION_MOVIES_FAILED,
+
+  FETCH_MOVIE_DETAILS_STARTED,
+  FETCH_MOVIE_DETAILS_COMPLETED,
+  FETCH_MOVIE_DETAILS_FAILED,
+
+  FETCH_MOVIE_RECOMMENDATIONS_STARTED,
+  FETCH_MOVIE_RECOMMENDATIONS_COMPLETED,
+  FETCH_MOVIE_RECOMMENDATIONS_FAILED,
 } from '../actions/index';
 
 const popularMoviesInitialState = {
@@ -28,6 +36,16 @@ const popularSectionMoviesInitialState = {
 
 const topRatedMoviesInitialState = {
   topRatedMovies: [],
+  isLoading: false,
+};
+
+const movieDetailsInitialState = {
+  details: [],
+  isLoading: false,
+};
+
+const movieRecommendationsInitialState = {
+  movies: [],
   isLoading: false,
 };
 
@@ -74,7 +92,36 @@ const popularSectionMovies = (currentState = popularSectionMoviesInitialState, a
   }
 };
 
+const movieDetails = (currentState = movieDetailsInitialState, action) => {
+  switch (action.type) {
+    case FETCH_MOVIE_DETAILS_STARTED:
+      return { ...currentState, isLoading: true };
+    case FETCH_MOVIE_DETAILS_COMPLETED:
+      return { isLoading: false, details: action.payload };
+    case FETCH_MOVIE_DETAILS_FAILED:
+      return { isLoading: false, details: [] };
+    default:
+      return currentState;
+  }
+};
+
+
+const movieRecommendations = (currentState = movieRecommendationsInitialState, action) => {
+  switch (action.type) {
+    case FETCH_MOVIE_RECOMMENDATIONS_STARTED:
+      return { ...currentState, isLoading: true };
+    case FETCH_MOVIE_RECOMMENDATIONS_COMPLETED:
+      return { isLoading: false, movies: action.payload };
+    case FETCH_MOVIE_RECOMMENDATIONS_FAILED:
+      return { isLoading: false, movies: [] };
+    default:
+      return currentState;
+  }
+};
+
 export default combineReducers({
+  movieDetails,
+  movieRecommendations,
   popularMovies,
   popularSectionMovies,
   topRatedMovies,

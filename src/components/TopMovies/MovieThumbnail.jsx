@@ -13,11 +13,12 @@ const Image = Styled.img`
   width: 154px;
 `;
 
-const MovieName = Styled.h1`
+const MovieName = Styled.a`
   color #63676f;
   font-size: 1rem;
   font-weight: 300;
   margin: 10px 0 0;
+  text-decoration: none;
   text-transform: uppercase;
 `;
 
@@ -28,15 +29,16 @@ const MovieReleaseDate = Styled.h4`
   margin: 0;
 `;
 
-const MovieThumbnail = ({ title, poster_path, release_date }) => (
+const MovieThumbnail = ({ id, title, poster_path, release_date }) => (
   <Container>
     <Image src={`https://image.tmdb.org/t/p/w154${poster_path}`} />
-    <MovieName>{ title }</MovieName>
+    <MovieName href={ `/movie/${id}` }>{ title }</MovieName>
     <MovieReleaseDate>({ release_date })</MovieReleaseDate>
   </Container>
 );
 
 MovieThumbnail.propTypes = {
+  id: PropTypes.number.isRequired,
   poster_path: PropTypes.string.isRequired,
   release_date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

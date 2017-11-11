@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import { homeActions } from '../actions';
-import HomePage from "../components/HomePage";
+import HomePage from '../components/HomePage';
 
 const mapStateToProps = ({ popularMovies, topRatedMovies }) => ({
   popularMovies,
@@ -9,7 +9,7 @@ const mapStateToProps = ({ popularMovies, topRatedMovies }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-	fetchPopularMovies: () => homeActions.fetchPopularMovies(dispatch),
+  fetchPopularMovies: () => homeActions.fetchPopularMovies(dispatch),
   fetchTopRatedMovies: () => homeActions.fetchTopRatedMovies(dispatch),
 });
 
