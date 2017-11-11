@@ -6,7 +6,7 @@ import {
 
 const movieDetailsInitialState = {
   details: [],
-  isLoading: false,
+  isLoading: false
 };
 
 /**
