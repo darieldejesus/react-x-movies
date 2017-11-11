@@ -5,30 +5,30 @@ import Styled from 'styled-components';
 import NavMenu from './NavMenu/';
 
 const TopSection = Styled.section`
-	background: #31353d;
-	height: 200px;
+  background: #31353d;
+  height: 200px;
 `;
 
 const ContentContainer = Styled.section`
-	background: #fff;
-	margin: 0 auto;
-	max-width: 1024px;
-	padding: 0 30px;
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 30px;
 `;
 
 class BasePage extends React.Component {
-	render() {
-		return [
-			<TopSection key="topSection">
-				{/*Logo should be here*/}
-        {/*Search input should be here*/}
-			</TopSection>,
-			<ContentContainer key="contentSection">
-        <NavMenu/>
-				{ this.props.children }
-			</ContentContainer>
-		]
-	}
+  render() {
+    return [
+      <TopSection key="topSection">
+        {/* Logo should be here */}
+        {/* Search input should be here */}
+      </TopSection>,
+      <ContentContainer key="contentSection">
+        <NavMenu />
+        {this.props.children}
+      </ContentContainer>,
+    ];
+  }
 }
 
 BasePage.propTypes = {

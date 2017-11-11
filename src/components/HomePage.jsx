@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
+import PropType from 'prop-types';
 
 import BasePage from './BasePage';
 import Slider from './Slider';
 import TopMovies from './TopMovies';
 
 class HomePage extends Component {
-  componentDidMount () {
+  componentDidMount() {
     const { popularMovies } = this.props.popularMovies;
     const { topRatedMovies } = this.props.topRatedMovies;
 
-    popularMovies.length === 0 && this.props.fetchPopularMovies();
-    topRatedMovies.length === 0 && this.props.fetchTopRatedMovies();
+    if (popularMovies.length === 0) {
+      this.props.fetchPopularMovies();
+    }
+
+    if (topRatedMovies.length === 0) {
+      this.props.fetchTopRatedMovies();
+    }
   }
 
-  render () {
+  render() {
     const { popularMovies, topRatedMovies } = this.props;
     return (
       <BasePage>
@@ -24,11 +30,24 @@ class HomePage extends Component {
             && <Slider entries={popularMovies.popularMovies} />}
         </div>
         <div>
-          <TopMovies entries={topRatedMovies.topRatedMovies}/>
+          <TopMovies entries={topRatedMovies.topRatedMovies} />
         </div>
       </BasePage>
     );
   }
+}
+
+HomePage.propTypes = {
+  popularMovies: PropType.shape({
+    isLoading: PropType.bool.isRequired,
+    popularMovies: PropType.array.isRequired,
+  }).isRequired,
+  topRatedMovies: PropType.shape({
+    isLoading: PropType.bool.isRequired,
+    topRatedMovies: PropType.array.isRequired,
+  }).isRequired,
+  fetchPopularMovies: PropType.func.isRequired,
+  fetchTopRatedMovies: PropType.func.isRequired,
 };
 
 export default HomePage;
