@@ -1,51 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavMenu should renders navigation  elements 1`] = `
-.c0 {
-  background: #ed0105;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 80px;
-  margin: 0;
-  padding: 10px 0 0 0;
-  position: relative;
-  top: -10px;
-  width: 100%;
-}
-
-<ul
-  className="c0"
->
-  <NavMenuLink
-    href="/"
-    key="/"
-    label="Home"
-  />
-  <NavMenuLink
-    href="/popular"
-    key="/popular"
-    label="Most Popular"
-  />
-  <NavMenuLink
-    href="/genres"
-    key="/genres"
-    label="Genres"
-  />
-  <NavMenuLink
-    href="/reviews"
-    key="/reviews"
-    label="Reviews"
-  />
-  <NavMenuLink
-    href="/contact"
-    key="/contact"
-    label="Contact"
-  />
-</ul>
-`;
-
 exports[`NavMenu should renders navigation elements 1`] = `
 .c0 {
   background: #ed0105;
