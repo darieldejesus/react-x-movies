@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Styled from 'styled-components';
 
-import MovieGridThumbnail from "./MovieGridThumbnail";
+import MovieGridThumbnail from './MovieGridThumbnail';
 
 const Container = Styled.section`
   display: grid;
@@ -25,7 +25,7 @@ MoviesGrid.propTypes = {
     title: PropTypes.string.isRequired,
     vote_average: PropTypes.number.isRequired,
     vote_count: PropTypes.number.isRequired,
-  })).isRequired
+  })).isRequired,
 };
 
 export default MoviesGrid;
