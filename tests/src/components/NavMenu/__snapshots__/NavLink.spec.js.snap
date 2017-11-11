@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavMenuLink should renders NavLinks 1`] = `
+<NavItem>
+  <Link
+    activeClassName="active"
+    to="test_href"
+  >
+    test_label
+  </Link>
+</NavItem>
+`;

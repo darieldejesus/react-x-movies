@@ -1,11 +1,10 @@
 import React from 'react';
-import Slide from "../../../../src/components/Slider/Slide";
+import Slide from '../../../../src/components/Slider/Slide';
 import fixture from '../../../fixture/popularMovies.json';
 
 describe('Slide', function () {
   beforeEach(() => {
     const entry = fixture[0];
-    console.log('entry', entry);
     this.wrapper = shallow(<Slide
       active={true}
       key={entry.id}
@@ -16,7 +15,6 @@ describe('Slide', function () {
       release={entry.release_date}
       title={entry.title}
     />);
-
   });
 
   test('should renders Slide', () => {
