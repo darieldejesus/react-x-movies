@@ -48,6 +48,6 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "verbose": true
+    "verbose": false
   }
 }

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasePage should renders the BasePage component 1`] = `
+Array [
+  <styled.section
+    key="topSection"
+  />,
+  <styled.section
+    key="contentSection"
+  />,
+]
+`;

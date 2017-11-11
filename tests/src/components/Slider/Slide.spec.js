@@ -1,6 +1,6 @@
 import React from 'react';
 import Slide from '../../../../src/components/Slider/Slide';
-import fixture from '../../../fixture/popularMovies.json';
+import fixture from '../../../fixture/movies.json';
 
 describe('Slide', function () {
   beforeEach(() => {

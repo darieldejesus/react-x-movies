@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListOfMovies should renders ListOfMovies 1`] = `
+<styled.div>
+  <MovieThumbnail
+    adult={false}
+    backdrop_path="/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg"
+    genre_ids={
+      Array [
+        27,
+        53,
+      ]
+    }
+    id={346364}
+    key="It"
+    original_language="en"
+    original_title="It"
+    overview="In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise."
+    popularity={729.612854}
+    poster_path="/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
+    release_date="2017-09-05"
+    title="It"
+    video={false}
+    vote_average={7.3}
+    vote_count={3559}
+  />
+  <MovieThumbnail
+    adult={false}
+    backdrop_path="/wBzMnQ01R9w58W6ucltdYfOyP4j.jpg"
+    genre_ids={
+      Array [
+        28,
+        12,
+        35,
+        14,
+        878,
+      ]
+    }
+    id={284053}
+    key="Thor: Ragnarok"
+    original_language="en"
+    original_title="Thor: Ragnarok"
+    overview="Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela."
+    popularity={627.309751}
+    poster_path="/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg"
+    release_date="2017-10-25"
+    title="Thor: Ragnarok"
+    video={false}
+    vote_average={7.7}
+    vote_count={1297}
+  />
+  <MovieThumbnail
+    adult={false}
+    backdrop_path="/eGx5OfOdvM0gkHdmkLe3hcJuEIT.jpg"
+    genre_ids={
+      Array [
+        27,
+        9648,
+        53,
+      ]
+    }
+    id={440021}
+    key="Happy Death Day"
+    original_language="en"
+    original_title="Happy Death Day"
+    overview="A college student relives the day of her murder over and over again as she tries to discover her killer's identity."
+    popularity={560.461034}
+    poster_path="/cTaEIUYTt52ooq9quVbAQ7NpGwo.jpg"
+    release_date="2017-10-12"
+    title="Happy Death Day"
+    video={false}
+    vote_average={6.5}
+    vote_count={243}
+  />
+  <MovieThumbnail
+    adult={false}
+    backdrop_path="/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg"
+    genre_ids={
+      Array [
+        10751,
+        16,
+        12,
+        35,
+      ]
+    }
+    id={211672}
+    key="Minions"
+    original_language="en"
+    original_title="Minions"
+    overview="Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world."
+    popularity={444.785132}
+    poster_path="/q0R4crx2SehcEEQEkYObktdeFy.jpg"
+    release_date="2015-06-17"
+    title="Minions"
+    video={false}
+    vote_average={6.4}
+    vote_count={4951}
+  />
+  <MovieThumbnail
+    adult={false}
+    backdrop_path="/2SEgJ0mHJ7TSdVDbkGU061tR33K.jpg"
+    genre_ids={
+      Array [
+        18,
+        53,
+        28,
+        878,
+      ]
+    }
+    id={347882}
+    key="Sleight"
+    original_language="en"
+    original_title="Sleight"
+    overview="A young street magician is left to take care of his little sister after his mother's passing and turns to drug dealing in the Los Angeles party scene to keep a roof over their heads. When he gets into trouble with his supplier, his sister is kidnapped and he is forced to rely on both his sleight of hand and brilliant mind to save her."
+    popularity={443.860101}
+    poster_path="/wridRvGxDqGldhzAIh3IcZhHT5F.jpg"
+    release_date="2017-04-28"
+    title="Sleight"
+    video={false}
+    vote_average={5.5}
+    vote_count={94}
+  />
+  <MovieThumbnail
+    adult={false}
+    backdrop_path="/ulMscezy9YX0bhknvJbZoUgQxO5.jpg"
+    genre_ids={
+      Array [
+        18,
+        878,
+        10752,
+      ]
+    }
+    id={281338}
+    key="War for the Planet of the Apes"
+    original_language="en"
+    original_title="War for the Planet of the Apes"
+    overview="Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet."
+    popularity={404.116934}
+    poster_path="/3vYhLLxrTtZLysXtIWktmd57Snv.jpg"
+    release_date="2017-07-11"
+    title="War for the Planet of the Apes"
+    video={false}
+    vote_average={6.8}
+    vote_count={2231}
+  />
+</styled.div>
+`;

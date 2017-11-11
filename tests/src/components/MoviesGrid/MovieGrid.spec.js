@@ -1,6 +1,6 @@
 import React from 'react';
 import MoviesGrid from '../../../../src/components/MoviesGrid/MoviesGrid';
-import fixture from '../../../fixture/popularMovies.json';
+import fixture from '../../../fixture/movies.json';
 
 describe('MovieGrid', function () {
   beforeEach(() => {
