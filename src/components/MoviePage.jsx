@@ -66,7 +66,7 @@ class MoviePage extends Component {
   render() {
     const { movieDetails, movieRecommendations } = this.props;
     const {
-      backdrop_path,
+      backdrop_path: backdropPath,
       overview,
       popularity,
       production_companies: productionCompanies,
@@ -80,7 +80,7 @@ class MoviePage extends Component {
       <BasePage>
         <MovieContainer>
           <MovieTitle>{ title }</MovieTitle>
-          <MovieImage src={`https://image.tmdb.org/t/p/w780${backdrop_path}`} />
+          <MovieImage src={`https://image.tmdb.org/t/p/w780${backdropPath}`} />
           <p>{ overview }</p>
 
           <h1>Details</h1>
