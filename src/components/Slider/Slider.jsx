@@ -25,7 +25,7 @@ class Slider extends Component {
       this.setState({
         currentEntry: currentEntry === latestIndex ? 0 : (currentEntry + 1),
       });
-    }, 1000);
+    }, 3000);
   }
 
   componentWillUnmount() {
